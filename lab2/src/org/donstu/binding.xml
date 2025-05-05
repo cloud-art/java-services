@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxws:bindings
+        xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        wsdlLocation="http://127.0.0.1:8088/bank-service?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/jaxws">
+
+    <jaxws:bindings node="wsdl:definitions/wsdl:portType[@name='BankService']">
+        <jaxws:bindings node="wsdl:operation[@name='getAvailableEmployers']">
+            <jaxws:enableAsyncMapping>true</jaxws:enableAsyncMapping>
+        </jaxws:bindings>
+    </jaxws:bindings>
+</jaxws:bindings>
